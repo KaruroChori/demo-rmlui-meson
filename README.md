@@ -1,0 +1,2 @@
+Demo to use [RmlUI](https://github.com/mikke89/RmlUi) with meson. Derived from [this earlier attempt](https://github.com/Dich0tomy/repro/tree/7f96240188ae46a4c9ebf9e4654c7eaa041ac5cd).  
+Meson does not play too nicely with this cmake project, but I was able to make it work.
