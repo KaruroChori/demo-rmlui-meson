@@ -17,6 +17,8 @@ struct ApplicationData {
     Rml::String animal = "dog";
 } my_data;
 
+constexpr char* filename = "./res/hello_world.rml";
+
 int main(int argc, char** argv){
     // Constructs the system and render interfaces, creates a window, and attaches
     // the renderer.
@@ -43,7 +45,7 @@ int main(int argc, char** argv){
     
     // Now we are ready to load our document.
     Rml::ElementDocument *document =
-        context->LoadDocument("./res/hello_world.rml");
+        context->LoadDocument(filename);
     document->Show();
 
     // Replace and style some text in the loaded document.
@@ -55,6 +57,12 @@ int main(int argc, char** argv){
 
     bool running = true; 
     while (running) {
+        /*
+        // Later, after RML source was changed
+        document->Close();
+        document = context->LoadDocument(filename);
+        */
+
         // Handle input and window events. 
         running = Backend::ProcessEvents(context, &Shell::ProcessKeyDownShortcuts, true); 
     

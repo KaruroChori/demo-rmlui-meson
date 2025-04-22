@@ -1,0 +1,34 @@
+<!--Attempt to prototype a component based solution to transpile-->
+
+<s:template name="component-a">
+    <h1><s:inject ref="~title">Untitled</s:inject></h1>
+    <p>
+        <s:inject ref="/hame-1"></s:inject>
+    </p>
+</s:template>
+<s:style scoped="true">
+
+</s:style>
+<s:script>
+    #Nothignin here for now
+</s:script>
+
+<s:import src="..." as="...">
+    <h1>Error</h1>
+    <s:inject ref="/hame-1"></s:inject>
+</s:import>
+
+<s:use s:src="component-a">
+    <s:error>
+        <h2>Failed to load!</h2>
+    </s:error>
+    <s:slot name="hame-1">
+
+    </s:slot>
+</s:use>
+
+<s:use s:src="component-a" title="Hello world">
+    <h2>Failed to load!</h2>
+</s:use>
+
+<x:component-a title="Hello world"></x:component-a>

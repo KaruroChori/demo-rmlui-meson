@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.rml": "xml",
+        "*rcss": "css"
+    }
+}

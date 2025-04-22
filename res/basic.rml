@@ -1,0 +1,12 @@
+<template name="basic" content="w">
+    <head>
+        <link type="text/rcss" href="app.rcss"/>
+
+    </head>
+    <body class="window">
+        <h1>Header</h1>
+        <p id="content">Base content</p>
+        <h1>Bye</h1>
+    </body>
+</template>
+    

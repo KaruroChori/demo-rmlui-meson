@@ -2,9 +2,10 @@
 <head>
 	<link type="text/rcss" href="rml.rcss"/>
 	<link type="text/rcss" href="app.rcss"/>
+	<link type="text/template" href="basic.rml" />
 	<title>Hello world</title>
 </head>
-<body data-model="animals">
+<body data-model="animals" template="basic">
 	<h1>RmlUi</h1>
 	<p>Hello <span id="world">world</span>!</p>
 	<p data-if="show_text">The quick brown fox jumps over the lazy {{animal}}.</p>
